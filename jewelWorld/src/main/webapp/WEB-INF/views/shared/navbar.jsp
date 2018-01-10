@@ -1,12 +1,12 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <div class="navbar-header">
+    <div  class="navbar-header">
       <a class="navbar-brand" href="${contextRoot}/home">JEWEL WORLD</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="${contextRoot}/home">Home</a></li>
-      <li><a href="${contextRoot}/aboutl">About Us</a></li>
- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="${contextRoot}/categories">Catagories <span class="caret"></span></a>
+      <li id="home" class="active"><a href="${contextRoot}/home">Home</a></li>
+      <li id="about"><a href="${contextRoot}/aboutl">About Us</a></li>
+ <li id="categories"class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="${contextRoot}/categories">Categories <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#">Earring</a></li>
           <li><a href="#">Rings</a></li>
@@ -14,11 +14,11 @@
           <li><a href="#">Bracelet</a></li>
         </ul>
       </li>
-      <li><a href="${contextRoot}/contact"><span class="glyphicon glyphicon-earphone"></span> Contact US</a></li>
+      <li id="about"><a href="${contextRoot}/contact"><span class="glyphicon glyphicon-earphone"></span> Contact US</a></li>
     </ul>
  <ul class="nav navbar-nav navbar-right">
-      <li><a href="${contextRoot}/signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="${contextRoot}/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li id="signUp"><a href="${contextRoot}/signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li id="login"><a href="${contextRoot}/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
 
 

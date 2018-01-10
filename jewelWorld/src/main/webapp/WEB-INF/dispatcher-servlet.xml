@@ -20,10 +20,13 @@ xmlns:mvc="http://www.springframework.org/schema/mvc"
     <property name="suffix" value=".jsp" />
    </bean>
    
-</beans>
-
+   
 <!-- loading static res -->
 
+   
 <mvc:annotation-driven />
 
-<mvc:resource location="/assets/" mapping="/resource/**"/>
+
+<mvc:resources location="/assets/" mapping="/resource/**" />
+
+</beans>
