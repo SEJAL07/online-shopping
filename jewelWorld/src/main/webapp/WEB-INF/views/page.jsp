@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<spring:url var="css" value="/resource/css"/>
-<spring:url var="js" value="/resource/js"/>
-<spring:url var="images" value="/resource/images"/>
+<spring:url var="css" value="/resource/css" />
+<spring:url var="js" value="/resource/js" />
+<spring:url var="images" value="/resource/images" />
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
@@ -20,7 +20,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Shop Homepage - Start Bootstrap Template</title>
+<title>jewelWorld</title>
 
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/${css}/bootstrap.min.css" rel="stylesheet">
