@@ -9,7 +9,29 @@ public class pageController {
 	@RequestMapping(value = { "/", "/home", "/index" })
 	public ModelAndView index() {
 		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("greeting", "welcome");
+		mv.addObject("title", "home");
+		mv.addObject("userClickHome", true);
 		return mv;
 	}
+	@RequestMapping(value = "/about")
+	public ModelAndView about() {
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "About Us");
+		mv.addObject("userClickAbout", true);
+		return mv;
+}
+	@RequestMapping(value = "/contact")
+	public ModelAndView contact() {
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Contact Us");
+		mv.addObject("userClickContact", true);
+		return mv;
+}	
+	@RequestMapping(value = "/about")
+	public ModelAndView about() {
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "About Us");
+		mv.addObject("userClickAbout", true);
+		return mv;
+}
 }
