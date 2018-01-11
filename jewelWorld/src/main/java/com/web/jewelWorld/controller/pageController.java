@@ -5,16 +5,25 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.web.JWbackEnd.dao.CategoryDAO;
+
 
 @Controller
 public class pageController {
 	
+	@Autowired
+	private CategoryDAO categoryDAO;
 	
 	@RequestMapping(value = { "/", "/home", "/index" })
 	public ModelAndView index() {
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("title", "home");
 		mv.addObject("userClickHome", true);
+		
+		//passing category list
+		
+		mv.addObject("categories",categoryDAO.list());
+		
 		return mv;
 	}	
 	@RequestMapping(value = "/about")

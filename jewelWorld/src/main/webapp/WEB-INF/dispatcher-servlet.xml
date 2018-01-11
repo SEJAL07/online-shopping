@@ -13,6 +13,7 @@ xmlns:mvc="http://www.springframework.org/schema/mvc"
    ">
   
    <context:component-scan base-package="com.web.jewelWorld.controller"/>
+    <context:component-scan base-package="com.web.JWbackEnd.daoimpl"/>
     
    <bean id="viewResolver"
    class="org.springframework.web.servlet.view.InternalResourceViewResolver">

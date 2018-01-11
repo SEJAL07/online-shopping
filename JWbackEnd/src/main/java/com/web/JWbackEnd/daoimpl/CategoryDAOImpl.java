@@ -1,11 +1,14 @@
-package com.web.JWbackEnd.daoimpl;
+ package com.web.JWbackEnd.daoimpl;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.web.JWbackEnd.dao.CategoryDAO;
 import com.web.JWbackEnd.dto.Category;
 
+@Repository("categoryDAO")
 public class CategoryDAOImpl implements CategoryDAO {
 
 	private static List<Category> categories = new ArrayList<>();
