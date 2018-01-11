@@ -12,8 +12,14 @@
 		<spring.version>4.3.13.RELEASE</spring.version>
 	</properties>
 
-
 	<dependencies>
+		<!-- linking backend project -->
+		<dependency>
+			<groupId>com.web</groupId>
+			<artifactId>JWbackEnd</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- java unit -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -37,12 +43,12 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-orm</artifactId>
-    <version>4.3.13.RELEASE</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>4.3.13.RELEASE</version>
+		</dependency>
 
 
 		<!--JSTL -->
